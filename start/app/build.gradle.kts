@@ -7,6 +7,8 @@ plugins {
     id("com.google.firebase.firebase-perf")
     id("dagger.hilt.android.plugin")
     id("com.ncorti.ktfmt.gradle") version "0.10.0"
+    id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -98,4 +100,8 @@ dependencies {
     androidTestImplementation("com.google.truth:truth:1.1.3")
     kspAndroidTest("com.google.dagger:hilt-compiler:2.47")
     debugImplementation("androidx.compose.ui:ui-tooling")
+
+    //Add the dependences about the documentation
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-analytics")    
 }
