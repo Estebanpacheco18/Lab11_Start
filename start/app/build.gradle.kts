@@ -7,6 +7,7 @@ plugins {
     id("com.google.firebase.firebase-perf")
     id("dagger.hilt.android.plugin")
     id("com.ncorti.ktfmt.gradle") version "0.10.0"
+    id("com.google.gms.google-services") version "4.4.2" apply false
 }
 
 android {
