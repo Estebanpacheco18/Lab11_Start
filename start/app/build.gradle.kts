@@ -1,14 +1,12 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("com.google.devtools.ksp")
     id("com.google.gms.google-services")
+    id("com.google.devtools.ksp")
     id("com.google.firebase.crashlytics")
     id("com.google.firebase.firebase-perf")
     id("dagger.hilt.android.plugin")
     id("com.ncorti.ktfmt.gradle") version "0.10.0"
-    id("com.android.application")
-    id("com.google.gms.google-services")
 }
 
 android {
@@ -103,5 +101,5 @@ dependencies {
 
     //Add the dependences about the documentation
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
-    implementation("com.google.firebase:firebase-analytics")    
+    implementation("com.google.firebase:firebase-analytics")
 }
