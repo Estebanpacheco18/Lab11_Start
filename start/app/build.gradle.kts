@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.makeitso"
-        minSdk = 21
+        minSdk = 23 //Updated from 21 to 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
