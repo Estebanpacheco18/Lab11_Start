@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.makeitso"
-        minSdk = 23 //Updated from 21 to 23
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -94,13 +94,9 @@ dependencies {
     //Test
     testImplementation("junit:junit:4.+")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.0")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.43.2")
     androidTestImplementation("com.google.truth:truth:1.1.3")
     kspAndroidTest("com.google.dagger:hilt-compiler:2.47")
     debugImplementation("androidx.compose.ui:ui-tooling")
-
-    //Add the dependences about the documentation
-    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
-    implementation("com.google.firebase:firebase-analytics")
 }
